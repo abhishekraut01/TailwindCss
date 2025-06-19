@@ -17,7 +17,10 @@
         <h1 class="text-2xl font-semibold">Pintola</h1>
       </div>
 
-      <div id="nav-mid" class="hidden lg:flex gap-10 items-center justify-between">
+      <div
+        id="nav-mid"
+        class="hidden lg:flex gap-10 items-center justify-between"
+      >
         <a href="#">Home</a>
         <a href="#">Pricing </a>
         <a href="#">Docs</a>
@@ -26,13 +29,44 @@
         <a href="#">Login</a>
       </div>
 
-      <i class="ri-menu-line text-3xl lg:hidden"></i>
+      <i onclick={handleToggle()} class="ri-menu-line toggler text-3xl lg:hidden"></i>
 
-      <Button class="hidden lg:flex justify-center items-center gap-2 border-2 rounded-md p-2 shadow-md ">
+      <button
+        class="hidden lg:flex justify-center items-center gap-2 border-2 rounded-md p-2 shadow-md"
+      >
         <i class="ri-reactjs-line"></i>
         ReactNative Developer
         <i class="ri-arrow-right-line"></i>
-      </Button>
+      </button>
+
+      <div
+        id="onMobileNav"
+        class="hidden fixed lg:hidden z-10 bg-white inset-0 max-w-full max-h-full"
+      >
+        <div class="flex  justify-between intems-center p-3">
+          <div id="website-logo" class="flex justify-center gap-2 items-center">
+            <img src="/Public/asset 0.png" alt="" />
+            <h1 class="text-2xl font-semibold">Pintola</h1>
+          </div>
+
+          <i onclick={handleToggle()}  class="ri-close-large-line toggler text-3xl lg:hidden"></i>
+        </div>
+
+        <div class="flex flex-col gap-5">
+        <a href="#" class=" rounded-md p-4 shadow-lg hover:bg-gray-100" >Home</a>
+        <a href="#"  class=" rounded-md p-4 shadow-lg hover:bg-gray-100">Pricing </a>
+        <a href="#"  class=" rounded-md p-4 shadow-lg hover:bg-gray-100">Docs</a>
+        <a href="#"  class=" rounded-md p-4 shadow-lg hover:bg-gray-100">Changelog</a>
+        <a href="#"  class=" rounded-md p-4 shadow-lg hover:bg-gray-100">Blogs</a>
+        <a href="#"  class=" rounded-md p-4 shadow-lg hover:bg-gray-100">Login</a>
+        </div>
+      </div>
+      </div>
     </nav>
+
+
+
+    <script src="script.js"></script>
+
   </body>
 </html>
