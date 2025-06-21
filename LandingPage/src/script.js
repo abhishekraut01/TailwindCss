@@ -1,5 +1,4 @@
-const btnToggrler = document.getElementById("onMobileNav");
-
-const handleToggle = () => {
-  btnToggrler.classList.toggle("hidden");
-};
+function handleToggle() {
+  const mobileNav = document.getElementById("onMobileNav");
+  mobileNav.classList.toggle("hidden");
+}

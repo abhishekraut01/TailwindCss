@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="h-screen">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pintola</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="flex justify-between intems-center p-3">
+  <body class="h-screen">
+    
+    <nav class="flex justify-between items-center p-3 shadow-md">
       <div id="website-logo" class="flex justify-center gap-2 items-center">
         <img src="/Public/asset 0.png" alt="" />
         <h1 class="text-2xl font-semibold">Pintola</h1>
@@ -29,7 +30,10 @@
         <a href="#">Login</a>
       </div>
 
-      <i onclick={handleToggle()} class="ri-menu-line toggler text-3xl lg:hidden"></i>
+      <i
+        onclick="{handleToggle()}"
+        class="ri-menu-line toggler text-3xl lg:hidden"
+      ></i>
 
       <button
         class="hidden lg:flex justify-center items-center gap-2 border-2 rounded-md p-2 shadow-md"
@@ -43,30 +47,67 @@
         id="onMobileNav"
         class="hidden fixed lg:hidden z-10 bg-white inset-0 max-w-full max-h-full"
       >
-        <div class="flex  justify-between intems-center p-3">
+        <div class="flex justify-between intems-center p-3">
           <div id="website-logo" class="flex justify-center gap-2 items-center">
             <img src="/Public/asset 0.png" alt="" />
             <h1 class="text-2xl font-semibold">Pintola</h1>
           </div>
 
-          <i onclick={handleToggle()}  class="ri-close-large-line toggler text-3xl lg:hidden"></i>
+          <i
+            onclick="{handleToggle()}"
+            class="ri-close-large-line toggler text-3xl lg:hidden"
+          ></i>
         </div>
 
         <div class="flex flex-col gap-5">
-        <a href="#" class=" rounded-md p-4 shadow-lg hover:bg-gray-100" >Home</a>
-        <a href="#"  class=" rounded-md p-4 shadow-lg hover:bg-gray-100">Pricing </a>
-        <a href="#"  class=" rounded-md p-4 shadow-lg hover:bg-gray-100">Docs</a>
-        <a href="#"  class=" rounded-md p-4 shadow-lg hover:bg-gray-100">Changelog</a>
-        <a href="#"  class=" rounded-md p-4 shadow-lg hover:bg-gray-100">Blogs</a>
-        <a href="#"  class=" rounded-md p-4 shadow-lg hover:bg-gray-100">Login</a>
+          <a
+            href="#"
+            class="rounded-md p-4 shadow-sm hover:bg-gray-100 transition-all ease-in"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="transition-all ease-in rounded-md p-4 shadow-sm hover:bg-gray-100"
+            >Pricing
+          </a>
+          <a
+            href="#"
+            class="transition-all ease-in rounded-md p-4 shadow-sm hover:bg-gray-100"
+            >Docs</a
+          >
+          <a
+            href="#"
+            class="transition-all ease-in rounded-md p-4 shadow-sm hover:bg-gray-100"
+            >Changelog</a
+          >
+          <a
+            href="#"
+            class="transition-all ease-in rounded-md p-4 shadow-sm hover:bg-gray-100"
+            >Blogs</a
+          >
+          <a
+            href="#"
+            class="transition-all ease-in rounded-md p-4 shadow-sm hover:bg-gray-100"
+            >Login</a
+          >
         </div>
-      </div>
+
+        <button
+          class="inline justify-center items-center gap-2 border-2 rounded-md p-2 shadow-md mt-5 ml-2"
+        >
+          <i class="ri-reactjs-line"></i>
+          ReactNative Developer
+          <i class="ri-arrow-right-line"></i>
+        </button>
       </div>
     </nav>
 
-
+    <main class="min-h-screen w-full bg-green-300">
+      <div class="flex justify-center items-center min-h-screen">
+        <h1 class="text-4xl">hello</h1>
+      </div>
+    </main>
 
     <script src="script.js"></script>
-
   </body>
 </html>
